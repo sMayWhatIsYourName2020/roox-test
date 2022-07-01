@@ -1,0 +1,89 @@
+@import "./variables";
+
+body {
+  min-height: 100%;
+  margin: 0;
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
+
+  background-color: $bg-user;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    "Courier New",
+    monospace;
+}
+
+dd {
+  margin: 0;
+}
+
+.container {
+  max-width: 730px;
+  margin: 0 auto;
+}
+
+.main {
+  display: flex;
+
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: $white;
+
+  &__filter {
+    width: 200px;
+    padding-left: 20px;
+
+    background-color: $bg-filter;
+  }
+
+  &__users {
+    padding: 0 60px 0 30px;
+  }
+}
+
+.filter {
+  &__title {
+    margin: 35px auto 10px;
+
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+  &__button-chosen {
+    margin-bottom: 10px;
+  }
+}
+
+.headling {
+  margin: 20px 0 15px;
+
+  font-size: 14px;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+}

@@ -1,0 +1,28 @@
+@import "../../variables";
+
+.button {
+  cursor: pointer;
+
+  display: block;
+
+  padding: 10px 20px;
+
+  font-size: 12px;
+  color: $white;
+  text-align: center;
+
+  border: none;
+  border-radius: 10px;
+
+  &__general {
+    background-color: $general;
+  }
+
+  &__blocked {
+    background-color: $blocked;
+  }
+
+  &__submit {
+    background-color: $submit;
+  }
+}
