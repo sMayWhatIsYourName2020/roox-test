@@ -1,70 +1,77 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 😍 RooX
 
-## Available Scripts
+Выполнение тестового задания на позицию Front-end разработчика от компании RooX.
 
-In the project directory, you can run:
+## 🔗 Ссылки
+[Сайт](https://roox-test-kohl.vercel.app)
+
+[Макет](https://www.figma.com/file/X8Ke95Xuc9ZXrZJ3DzQjOW/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5?node-id=2%3A2)
+
+[Автор](https://t.me/sMayWhatIsYourName)
+
+## ✅ Выполнено
+
+- Вывод пользователей
+- Лоадер
+- Кнопка подробнее для перехода на “Профиль пользователя”
+- Фильтрация
+- Предзаполнение полей
+- Кнопка для редактирования данных
+- Валидация полей
+- Формирование JSON после отправки формы
+
+## 🚀 Дополнительно
+
+- Использован Redux ToolKit:
+    - Для получения данных с API
+    - Для изменения данных с формы
+- Использована методология БЭМ
+- Кнопка отмены редактирования данных
+- Переход на главную страницу после отправки формы
+- Линтинг
+    - stylelint
+    - eslint
+
+
+
+
+## 🍔 Технологии
+- React
+- Redux
+- Redux ToolKit
+- Axios
+- SASS (SCSS)
+- Formik
+- Yup
+
+
+## 🎹 Установка
+
+В корневой директории вы можете:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Запускает приложение в режиме разработчика.\
+Откройте [http://localhost:3000](http://localhost:3000) для просмотра в браузере.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Собирает приложение в директорию `build` для деплоя.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `npm run lint:es`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Анализирует файлы `.js`, `.jsx` на качество кода.
 
-### `npm run eject`
+### `npm run lint:es:fix`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Исправляет код в `.js`, `.jsx` файлах.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `npm run lint:scss`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Анализирует файлы `.scss` на качество кода.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### `npm run lint:scss:fix`
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Исправляет код в `.scss` файлах.
+    
