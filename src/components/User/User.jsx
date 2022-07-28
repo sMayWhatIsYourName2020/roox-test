@@ -1,11 +1,9 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 import styles from './User.module.scss';
-import useUser from '../../hooks/index';
 
 function User({ user }) {
-  const { setChosenUserId } = useUser();
-
   return (
     <article className={styles['user']}>
       <dl className={styles['user__outter']}>
@@ -22,7 +20,7 @@ function User({ user }) {
           <dd>{user.company.name}</dd>
         </div>
       </dl>
-      <button className={styles['user__link']} onClick={() => setChosenUserId(user.id)}>Подробнее</button>
+      <Link className={styles['user__link']} to={`/user/${user.id}`}>Подробнее</Link>
     </article>
   );
 }

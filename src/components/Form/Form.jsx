@@ -1,11 +1,10 @@
 import React from 'react';
-import { useSelector,useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { Formik } from 'formik';
 import * as yup from 'yup';
 import merge from 'lodash.merge';
 
-import { selectors, actions } from '../../slices/usersSlice';
-import useUser from '../../hooks/index';
+import { actions } from '../../slices/usersSlice';
 import Button from '../../components/Button/Button';
 import styles from './Form.module.scss';
 import cn from 'classnames';
@@ -22,11 +21,8 @@ const schema = yup.object().shape({
   comment: yup.string().trim(),
 });
 
-function Form({ isReadOnlyMode }) {
+function Form({ isReadOnlyMode, setIsReadOnlyMode, user }) {
   const dispatch = useDispatch();
-  const { chosenUserId, setChosenUserId } = useUser();
-  const users = useSelector(selectors.selectAll);
-  const user = users.find(({ id }) => id === chosenUserId);
   const textAreaStyles = cn(styles['form__control'], styles['form__control-area']);
   return (
     <Formik
@@ -49,11 +45,11 @@ function Form({ isReadOnlyMode }) {
           }; 
           merge(user, newData);
           const normalizedObj = {
-            id: chosenUserId,
+            id: user.id,
             changes: newData,
           };
           dispatch(actions.updateUser(normalizedObj));
-          setChosenUserId(null);
+          setIsReadOnlyMode(true);
         }}
         initialValues={{
           name: user.name,
